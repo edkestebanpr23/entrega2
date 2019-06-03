@@ -67,7 +67,7 @@ if (argv.id) {
                 '</b><br>El cual tiene una duración de <b>' + curso.duracion + ' horas <b>' +
                 'Y un valor de <b><i>$' + curso.valor + "</i></b>.</p>";
 
-        app.use(express.static(__dirname + '/public'))
+        // app.use(express.static(__dirname + '/public'))
         app.get('/', function(req, res) {
             res.send(texto)
         })
